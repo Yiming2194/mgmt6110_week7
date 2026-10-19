@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Who Leads the Work?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
@@ -187,8 +191,11 @@ code.good { background: var(--ai); color: var(--ai-ink); border: 1px solid var(-
 .rblock:last-child { grid-column: 1 / -1; }
 .rblock.where { border-color: var(--mine); background: var(--mine-bg); grid-column: 1 / -1; }
 .rl { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--mine); }
-.rblock p { margin: 0; line-height: 1.55; max-width: 110ch; }
+.rblock p { margin: 0; line-height: 1.55; }
 @media (max-width: 760px) { .rgrid { grid-template-columns: 1fr; } .headside { gap: 10px; } }
+
+/* Footer credit on every tab */
+.credit { font-family: var(--font-mono); font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; text-align: center; align-self: end; }
 </style>
 
 <nav class="tabs" role="tablist" aria-label="Sections">
@@ -232,6 +239,7 @@ code.good { background: var(--ai); color: var(--ai-ink); border: 1px solid var(-
       <p>The recruiter reads the drafted emails in the Drafts mailbox every day at 12pm.</p>
     </li>
   </ol>
+  <footer class="credit">MGMT6110 | Problem Set 5 | Lee Yi Ming</footer>
 </main>
 
 <main class="slide zap" id="panel-zap" role="tabpanel" aria-labelledby="tab-zap" hidden>
@@ -281,6 +289,7 @@ code.good { background: var(--ai); color: var(--ai-ink); border: 1px solid var(-
     </li>
   </ol>
   <p class="hint">Click a screenshot to enlarge it.</p>
+  <footer class="credit">MGMT6110 | Problem Set 5 | Lee Yi Ming</footer>
 </main>
 
 <dialog id="zoom" aria-label="Enlarged screenshot"><img alt=""><button type="button" class="close" aria-label="Close">×</button></dialog>
@@ -344,6 +353,7 @@ code.good { background: var(--ai); color: var(--ai-ink); border: 1px solid var(-
       </div>
     </div>
   </section>
+  <footer class="credit">MGMT6110 | Problem Set 5 | Lee Yi Ming</footer>
 </main>
 
 <script>
